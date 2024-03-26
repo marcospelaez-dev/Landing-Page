@@ -1,0 +1,96 @@
+/*
+* Landing Paves de alta conversão Top Cakes
+* Página de teste da empresa On Limitless
+* Data: 26/03/2024
+* Autor: Marcos Pelaez - Web Designer
+*/
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body { background-color: #FA6543; }
+
+.general-box {
+    background-image: linear-gradient(135deg, #FA6543 60%, #FFFFFF);
+    height: 100vh;
+}
+
+/* Header Section */
+.title {
+    margin: 0.625em;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    font-style: italic;
+    letter-spacing: 4px;
+    color: #FFFFFF;
+}
+
+.notice {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #FFFFFF;
+}
+
+.foto-cake {
+    margin: 20px auto;
+    width: 80%;
+    background-color: #FAA543;
+    border-radius: 70%;
+}
+
+.foto-cake img {
+    width: 100%;
+}
+
+/* Register Section */
+.register {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register form label {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.register form input {
+    padding: 8px;
+    margin-top: 3px;
+    background-color: #F0F0F0;
+    border: 0;
+}
+
+.register button {
+    width: 100%;
+    margin: 20px 0;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #FAA543;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 25px;
+    color: #3C3C3C;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+    transition: 1s;
+}
+
+.register button:hover {
+    background-color: #FA6543;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
