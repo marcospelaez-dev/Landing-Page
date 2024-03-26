@@ -13,12 +13,16 @@
     font-size: 16px;
 }
 
-body { background-color: #FA6543; }
+body { background-color: #FA6543; background-image: linear-gradient(135deg, #FA6543 60%, #FFFFFF);}
 
 .general-box {
-    background-image: linear-gradient(135deg, #FA6543 60%, #FFFFFF);
+    margin: 50px auto 0 auto;
+    max-width: 1000px;
     height: 100vh;
 }
+
+
+/* ------ Config Mobile------ */
 
 /* Header Section */
 .title {
@@ -40,7 +44,7 @@ body { background-color: #FA6543; }
 }
 
 .foto-cake {
-    margin: 20px auto;
+    margin: 1.25em auto;
     width: 80%;
     background-color: #FAA543;
     border-radius: 70%;
@@ -53,7 +57,7 @@ body { background-color: #FA6543; }
 /* Register Section */
 .register {
     width: 80%;
-    margin: 20px auto;
+    margin: 1.25em auto;
 }
 
 .register form {
@@ -64,26 +68,27 @@ body { background-color: #FA6543; }
 .register form label {
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 0.312em;
 }
 
 .register form input {
-    padding: 8px;
-    margin-top: 3px;
+    padding: 0.625em;
+    margin-top: 0.188empx;
     background-color: #F0F0F0;
     border: 0;
+    border-radius: 0.75em;
 }
 
 .register button {
     width: 100%;
-    margin: 20px 0;
-    padding: 12px;
-    border-radius: 12px;
+    margin: 1.25em 0;
+    padding: 0.75em;
+    border-radius: 0.75em;
     background-color: #FAA543;
     border: none;
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.563em;
     color: #3C3C3C;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
     transition: 1s;
@@ -93,4 +98,77 @@ body { background-color: #FA6543; }
     background-color: #FA6543;
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
+}
+
+/* ------ Config Mobile adjustment ------ */
+@media screen and (min-width: 500px) {
+    .notice {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .notice {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/* ------ Config Tablet------ */
+
+/* Header section */
+@media screen and (min-width: 780px) {
+    .foto-cake {
+        margin: 1.25em auto;
+        width: 70%;
+        background-color: #FAA543;
+        border-radius: 70%;
+    }
+
+    /* Register Section */
+    .register {
+        width: 70%;
+    }
+}
+
+/* ------ Config Desktop ------ */
+
+/* Header section */
+@media screen and (min-width: 960px) {
+   .foto-cake {
+        width: 55%;
+        margin: 20px 20px;
+   }
+
+   .seta {
+        width: 100%;
+   }
+
+    /* Register Section */
+   .register {
+        width: 55%;
+        margin: 20px 0 0 40%;
+    }
+}
+
+/* ------ Config Desktop Adjustment ------ */
+@media screen and (min-width: 1000px){
+    .title {
+        font-size: 70px;
+    }
+
+    .foto-cake {
+        width: 45%;
+    }
+
+    .register {
+        width: 45%;
+        margin: 0 50% 0;
+    }
+
+    .notice {
+        margin-top: -20px;
+        font-size: 30px;
+    }
 }
